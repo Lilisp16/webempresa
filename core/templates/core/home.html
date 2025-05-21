@@ -1,0 +1,160 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block title %}Carmen Manjarres{% endblock %}
+{% block content %}
+
+
+
+<!--Contenido-->
+<div class="contenido">
+
+
+	<section class="page-section clearfix">
+		<div class="container">
+			<div class="intro">
+				<div class="intro-text left-5 text-center bg-faded  rounded">
+					<h2 class="section-heading mb-4">
+						<span class="section-heading-upper">Renueva tu esencia</span>
+						<span class="section-heading-lower">Te encantará</span>
+					</h2>
+					<p class="mb-3">Te invitamos a disfrutar de un lugar donde 
+						cada detalle está orientado a brindarte el bienestar que mereces. 
+						Relájate, déjate mimar y déjanos ayudarte a resaltar tu mejor versión 
+						en un entorno cálido y acogedor.
+					</p>
+					<a class="intro-button" href="visit">Visitanos</a>
+				</div>
+				<img class="intro-img img-fluid mb-3 mb-lg-0" src="{% static 'core/img/sasha.png' %}"
+					alt="">
+			</div>
+		</div>
+	</section>
+
+
+
+
+<section class="servicios py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Nuestros Servicios</h2>
+        <div class="row">
+
+            <!-- Tarjeta 1 -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card servicio-card text-center p-3">
+                    <div class="imagen-circular mx-auto">
+                        <img src="{% static 'core/img/servicio3.jpg' %}" alt="Servicio 1">
+                    </div>
+                    <div class="card-body mt-4">
+                        <h5 class="card-title">Limpieza Facial</h5>
+                        <p class="card-text">Tratamiento profundo para limpiar e hidratar tu piel.</p>
+                        <a href="https://wa.me/573175858465?text=Hola,%20quiero%20agendar%20una%20cita%20para%20una%20limpieza%20facial" target="_blank" class="btn btn-dark">Agenda tu cita</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 2 -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card servicio-card text-center p-3">
+                    <div class="imagen-circular mx-auto">
+                        <img src="{% static 'core/img/servicio4.png' %}" alt="Servicio 2">
+                    </div>
+                    <div class="card-body mt-4">
+                        <h5 class="card-title">Depilación Láser</h5>
+                        <p class="card-text">Elimina el vello no deseado de forma duradera y segura.</p>
+                        <a href="https://wa.me/573175858465?text=Hola,%20quiero%20agendar%20una%20cita%20para%20depilación%20láser" target="_blank" class="btn btn-dark">Agenda tu cita</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 3 -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card servicio-card text-center p-3">
+                    <div class="imagen-circular mx-auto">
+                        <img src="{% static 'core/img/servicio1.jpg' %}" alt="Servicio 3">
+                    </div>
+                    <div class="card-body mt-4">
+                        <h5 class="card-title">Masajes Relajantes</h5>
+                        <p class="card-text">Alivia el estrés y mejora tu bienestar físico y emocional.</p>
+                        <a href="https://wa.me/573175858465?text=Hola,%20quiero%20agendar%20una%20cita%20para%20masajes%20relajantes" target="_blank" class="btn btn-dark">Agenda tu cita</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 4 -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card servicio-card text-center p-3">
+                    <div class="imagen-circular mx-auto">
+                        <img src="{% static 'core/img/servicio2.jpg' %}" alt="Servicio 4">
+                    </div>
+                    <div class="card-body mt-4">
+                        <h5 class="card-title">Lifting de Pestañas</h5>
+                        <p class="card-text">Realza tu mirada con un efecto natural y duradero.</p>
+                        <a href="https://wa.me/573175858465?text=Hola,%20quiero%20agendar%20una%20cita%20para%20lifting%20de%20pestañas" target="_blank" class="btn btn-dark">Agenda tu cita</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 5 -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card servicio-card text-center p-3">
+                    <div class="imagen-circular mx-auto">
+                        <img src="{% static 'core/img/servicio5.png' %}" alt="Servicio 5">
+                    </div>
+                    <div class="card-body mt-4">
+                        <h5 class="card-title">Tratamiento Capilar</h5>
+                        <p class="card-text">Fortalece tu cabello desde la raíz con productos naturales.</p>
+                        <a href="https://wa.me/573175858465?text=Hola,%20quiero%20agendar%20una%20cita%20para%20tratamiento%20capilar" target="_blank" class="btn btn-dark">Agenda tu cita</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 6 -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card servicio-card text-center p-3">
+                    <div class="imagen-circular mx-auto">
+                        <img src="{% static 'core/img/servicio6.png' %}" alt="Servicio 6">
+                    </div>
+                    <div class="card-body mt-4">
+                        <h5 class="card-title">Microblading</h5>
+                        <p class="card-text">Define y mejora la forma de tus cejas de manera semipermanente.</p>
+                        <a href="https://wa.me/573175858465?text=Hola,%20quiero%20agendar%20una%20cita%20para%20microblading" target="_blank" class="btn btn-dark">Agenda tu cita</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+	<!-- Mensaje -->
+		<section class="page-section cta">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-9 mx-auto">
+						<div class="cta-inner text-center rounded">
+							<h2 class="section-heading mb-4">
+								<span class="section-heading-upper">Compromiso total</span>
+								<span class="section-heading-lower">Garantizado</span>
+							</h2>
+							<p class="mb-0">En nuestro centro de estética <strong>Carmen Manjarres</strong>, 
+							cada servicio está respaldado por nuestra promesa de calidad 
+							y atención personalizada. Nos aseguramos de que cada tratamiento 
+							esté diseñado para potenciar tu belleza y bienestar, ofreciéndote 
+							resultados visibles y satisfactorios. Renueva tu esencia 
+							con la tranquilidad de saber que estás en las mejores manos.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+
+{% endblock %}					
+
+

@@ -1,0 +1,94 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block title %}Visitanos{% endblock %}
+{% block content %}
+
+ <!--Contenido-->
+ <div class="contenido">
+    <!-- Sección de tarjetas -->
+    <section class="page-section CardCE">
+        <div class="container">
+            <div class="row">
+                <!-- Tarjeta 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card CE">
+                        <img src="{% static 'core/img/clinica1.jpg' %}" class="card-img-top" alt="Imagen 1">
+                       <!-- <div class="card-body">
+                            <h5 class="card-title">Imagen 1</h5>
+                            <p class="card-text">Descripción breve de la imagen 1 de nuestro establecimiento.</p>
+                        </div>-->
+                    </div>
+                </div>
+
+                <!-- Tarjeta 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card CE">
+                        <img src="{% static 'core/img/clinica2.jpg' %}" class="card-img-top" alt="Imagen 2">
+                    <!--<div class="card-body">
+                            <h5 class="card-title">Imagen 2</h5>
+                            <p class="card-text">Descripción breve de la imagen 2 de nuestro establecimiento.</p>
+                        </div>-->
+                    </div>
+                </div>
+
+                <!-- Tarjeta 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card CE">
+                        <img src="{% static 'core/img/clinica3.jpg' %}" class="card-img-top" alt="Imagen 3">
+                      <!--  <div class="card-body">
+                            <h5 class="card-title">Imagen 3</h5>
+                            <p class="card-text">Descripción breve de la imagen 3 de nuestro establecimiento.</p>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+                          
+                            
+        <section class="page-section cta">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 mx-auto">
+                        <div class="cta-inner text-center rounded">
+                            <h2 class="section-heading mb-5">
+                                <span class="section-heading-upper">Te esperamos</span>
+                                <span class="section-heading-lower">Visitanos</span>
+                            </h2>
+                            <ul class="list-unstyled list-hours mb-5 text-left mx-auto">
+                                <li class="list-unstyled-item list-hours-item d-flex">
+                                    Lunes a viernes
+                                    <span class="ml-auto">8:00 a 19:00</span>
+                                </li>
+                                <li class="list-unstyled-item list-hours-item d-flex">
+                                    Sábados
+                                    <span class="ml-auto">7:00 a 21:00</span>
+                                </li>
+                                <li class="list-unstyled-item list-hours-item d-flex">
+                                    Domingos
+                                    <span class="ml-auto">Cerrado</span>
+                                </li>
+                            </ul>
+                            <p class="address mb-5">
+                                <em>
+                                    <strong>Avd. Ejemplo nº 138</strong>
+                                    <br>
+                                    Santa Marta
+                                </em>
+                            </p>
+                            <p class="mb-0">
+                                <small>
+                                    <em>Llámanos y pregunta</em>
+                                </small>
+                                <br>
+                                (317) 585-8465
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+{% endblock %}

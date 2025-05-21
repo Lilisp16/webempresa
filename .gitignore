@@ -1,0 +1,37 @@
+# ========================
+# Django / Python
+# ========================
+
+# Archivos de entorno
+.env
+
+# Base de datos SQLite local
+*.sqlite3
+
+# Archivos compilados de Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Archivos de caché de Django
+staticfiles/
+media/
+
+# Entornos virtuales
+venv/
+env/
+
+# Archivos temporales o logs
+*.log
+*.pot
+*.mo
+
+# Configuración del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos de configuración de editores (opcional)
+.vscode/
+.idea/
+

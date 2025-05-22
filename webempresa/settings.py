@@ -52,6 +52,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -128,6 +129,9 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+import os
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
 #archivos media
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'  # Usando Path para crear la ruta
@@ -149,3 +153,4 @@ EMAIL_HOST_USER = config('EMAIL_HOST_USER')  # Tu usuario SMTP (por ejemplo, tu 
 EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')  # Tu API Key o contraseña SMTP
 
 
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'

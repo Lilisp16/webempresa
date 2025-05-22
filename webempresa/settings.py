@@ -142,9 +142,9 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # CONFIGURACION EMAIL - Looking to send emails in production? Check out our Email API/SMTP product!
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'  # Usamos SMTP como backend
-EMAIL_HOST = 'smtp.mailersend.net'  # SMTP de MailerSend
-EMAIL_PORT = 587  # El puerto SMTP (587 para TLS)
-EMAIL_USE_TLS = True  # Usamos TLS para seguridad
+EMAIL_HOST = config('EMAIL_HOST')  # smtp.gmail.com
+EMAIL_PORT = config('EMAIL_PORT', cast=int)  # 587
+EMAIL_USE_TLS = config('EMAIL_USE_TLS', cast=bool)  # True
 EMAIL_HOST_USER = config('EMAIL_HOST_USER')  # Tu usuario SMTP (por ejemplo, tu correo de MailerSend)
 EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')  # Tu API Key o contraseña SMTP
 

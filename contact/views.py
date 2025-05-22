@@ -1,9 +1,9 @@
-
+from django.conf import settings
 from django.shortcuts import render, redirect
 from django.urls import reverse
 from django.core.mail import EmailMessage
 from .forms import ContactForm
-
+#CODIGO PARA EL FORMULARIO DE ENVIO DE CORREO (contact/views.py)
 # Create your views here.
 def contact(request):
     contact_form = ContactForm()
@@ -19,7 +19,7 @@ def contact(request):
             email_message = EmailMessage(
                 "CarmenManjarres: Nuevo mensaje de contacto", #Asunto
                 f"De {name} ({mail})\n\nEscribió:\n\n{content}",  # Cuerpo del mensaje
-                'MS_vqJ8Ty@trial-3zxk54vxqe1gjy6v.mlsender.net',
+                settings.EMAIL_HOST_USER,
                 ["operadorpersonal0@gmail.com"], #emaildedestino
                 reply_to=[mail]
             )
